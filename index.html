@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>To-Do List</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <section class="container">
+    <div class="heading">
+      <img class="heading__img">
+      <h1 class="heading__title">To-Do List</h1>
+    </div>
+    <form class="form">
+      <div>
+        <label class="form__label" for="todo">~ Today I need to ~</label>
+        <input class="form__input" type="text" id="todo" name="to-do" size="30" required>
+        <button class="button"><span>Add</span></button>
+        <label class="form__label" for="date">Date:</label>
+        <input type="date" id="date" name="date" required>
+      </div>
+    </form>
+    <div class="columns">
+      <div class="column" id="today">
+        <h2>Today's Tasks</h2>
+        <ul class="toDoList"></ul>
+      </div>
+      <div class="column" id="tomorrow">
+        <h2>Tomorrow's Tasks</h2>
+        <ul class="toDoList"></ul>
+      </div>
+      <div class="column" id="day-after">
+        <h2>Day After Tomorrow</h2>
+        <ul class="toDoList"></ul>
+      </div>
+    </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
